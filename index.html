@@ -3,14 +3,609 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Div</title>
+    <title>Country Flags Web</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .collapsible {
+            cursor: pointer;
+            padding: 18px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <p>1x1</p>
-    <p>Go to: flgas/1x1/XX.svg</p>
-    <p>4x3</p>
-    <p>Go to: flgas/1x1/XX.svg</p>
+
+<h2>Country Flags</h2>
+
+<button type="button" class="collapsible">1x1 Flags</button>
+<div class="content">
+    <div class="grid-container">
+        <!-- Repeat for each 1x1 flag -->
+        <img src="flags/1x1/ad.svg" alt="Andorra"/>
+        <img src="flags/1x1/ae.svg" alt="United Arab Emirates"/>
+        <img src="flags/1x1/af.svg" alt="Afghanistan"/>
+        <img src="flags/1x1/ag.svg" alt="Antigua and Barbuda"/>
+        <img src="flags/1x1/ai.svg" alt="Anguilla"/>
+        <img src="flags/1x1/al.svg" alt="Albania"/>
+        <img src="flags/1x1/am.svg" alt="Armenia"/>
+        <img src="flags/1x1/ao.svg" alt="Angola"/>
+        <img src="flags/1x1/aq.svg" alt="Antarctica"/>
+        <img src="flags/1x1/ar.svg" alt="Argentina"/>
+        <img src="flags/1x1/arab.svg" alt="Arab World"/>
+        <img src="flags/1x1/as.svg" alt="American Samoa"/>
+        <img src="flags/1x1/at.svg" alt="Austria"/>
+        <img src="flags/1x1/au.svg" alt="Australia"/>
+        <img src="flags/1x1/aw.svg" alt="Aruba"/>
+        <img src="flags/1x1/ax.svg" alt="Åland Islands"/>
+        <img src="flags/1x1/az.svg" alt="Azerbaijan"/>
+        <img src="flags/1x1/ba.svg" alt="Bosnia and Herzegovina"/>
+        <img src="flags/1x1/bb.svg" alt="Barbados"/>
+        <img src="flags/1x1/bd.svg" alt="Bangladesh"/>
+        <img src="flags/1x1/be.svg" alt="Belgium"/>
+        <img src="flags/1x1/bf.svg" alt="Burkina Faso"/>
+        <img src="flags/1x1/bg.svg" alt="Bulgaria"/>
+        <img src="flags/1x1/bh.svg" alt="Bahrain"/>
+        <img src="flags/1x1/bi.svg" alt="Burundi"/>
+        <img src="flags/1x1/bj.svg" alt="Benin"/>
+        <img src="flags/1x1/bl.svg" alt="Saint Barthélemy"/>
+        <img src="flags/1x1/bm.svg" alt="Bermuda"/>
+        <img src="flags/1x1/bn.svg" alt="Brunei"/>
+        <img src="flags/1x1/bo.svg" alt="Bolivia"/>
+        <img src="flags/1x1/bq.svg" alt="Caribbean Netherlands"/>
+        <img src="flags/1x1/br.svg" alt="Brazil"/>
+        <img src="flags/1x1/bs.svg" alt="The Bahamas"/>
+        <img src="flags/1x1/bt.svg" alt="Bhutan"/>
+        <img src="flags/1x1/bv.svg" alt="Bouvet Island"/>
+        <img src="flags/1x1/bw.svg" alt="Botswana"/>
+        <img src="flags/1x1/by.svg" alt="Belarus"/>
+        <img src="flags/1x1/bz.svg" alt="Belize"/>
+        <img src="flags/1x1/ca.svg" alt="Canada"/>
+        <img src="flags/1x1/cc.svg" alt="Cocos (Keeling) Islands"/>
+        <img src="flags/1x1/cd.svg" alt="Democratic Republic of the Congo"/>
+        <img src="flags/1x1/cefta.svg" alt="Central European Free Trade Agreement"/>
+        <img src="flags/1x1/cf.svg" alt="Central African Republic"/>
+        <img src="flags/1x1/cg.svg" alt="Republic of the Congo"/>
+        <img src="flags/1x1/ch.svg" alt="Switzerland"/>
+        <img src="flags/1x1/ci.svg" alt="Ivory Coast"/>
+        <img src="flags/1x1/ck.svg" alt="Cook Islands"/>
+        <img src="flags/1x1/cl.svg" alt="Chile"/>
+        <img src="flags/1x1/cm.svg" alt="Cameroon"/>
+        <img src="flags/1x1/cn.svg" alt="China"/>
+        <img src="flags/1x1/co.svg" alt="Colombia"/>
+        <img src="flags/1x1/cp.svg" alt="Clipperton Island"/>
+        <img src="flags/1x1/cr.svg" alt="Costa Rica"/>
+        <img src="flags/1x1/cu.svg" alt="Cuba"/>
+        <img src="flags/1x1/cv.svg" alt="Cape Verde"/>
+        <img src="flags/1x1/cw.svg" alt="Curaçao"/>
+        <img src="flags/1x1/cx.svg" alt="Christmas Island"/>
+        <img src="flags/1x1/cy.svg" alt="Cyprus"/>
+        <img src="flags/1x1/cz.svg" alt="Czech Republic"/>
+        <img src="flags/1x1/de.svg" alt="Germany"/>
+        <img src="flags/1x1/dg.svg" alt="Diego Garcia"/>
+        <img src="flags/1x1/dj.svg" alt="Djibouti"/>
+        <img src="flags/1x1/dk.svg" alt="Denmark"/>
+        <img src="flags/1x1/dm.svg" alt="Dominica"/>
+        <img src="flags/1x1/do.svg" alt="Dominican Republic"/>
+        <img src="flags/1x1/dz.svg" alt="Algeria"/>
+        <img src="flags/1x1/eac.svg" alt="East African Community"/>
+        <img src="flags/1x1/ec.svg" alt="Ecuador"/>
+        <img src="flags/1x1/ee.svg" alt="Estonia"/>
+        <img src="flags/1x1/eg.svg" alt="Egypt"/>
+        <img src="flags/1x1/eh.svg" alt="Western Sahara"/>
+        <img src="flags/1x1/er.svg" alt="Eritrea"/>
+        <img src="flags/1x1/es-ct.svg" alt="Catalonia"/>
+        <img src="flags/1x1/es-ga.svg" alt="Galicia"/>
+        <img src="flags/1x1/es-pv.svg" alt="Basque Country"/>
+        <img src="flags/1x1/es.svg" alt="Spain"/>
+        <img src="flags/1x1/et.svg" alt="Ethiopia"/>
+        <img src="flags/1x1/eu.svg" alt="European Union"/>
+        <img src="flags/1x1/fi.svg" alt="Finland"/>
+        <img src="flags/1x1/fj.svg" alt="Fiji"/>
+        <img src="flags/1x1/fk.svg" alt="Falkland Islands"/>
+        <img src="flags/1x1/fm.svg" alt="Micronesia"/>
+        <img src="flags/1x1/fo.svg" alt="Faroe Islands"/>
+        <img src="flags/1x1/fr.svg" alt="France"/>
+        <img src="flags/1x1/ga.svg" alt="Gabon"/>
+        <img src="flags/1x1/gb-eng.svg" alt="England"/>
+        <img src="flags/1x1/gb-nir.svg" alt="Northern Ireland"/>
+        <img src="flags/1x1/gb-sct.svg" alt="Scotland"/>
+        <img src="flags/1x1/gb-wls.svg" alt="Wales"/>
+        <img src="flags/1x1/gb.svg" alt="United Kingdom"/>
+        <img src="flags/1x1/gd.svg" alt="Grenada"/>
+        <img src="flags/1x1/ge.svg" alt="Georgia"/>
+        <img src="flags/1x1/gf.svg" alt="French Guiana"/>
+        <img src="flags/1x1/gg.svg" alt="Guernsey"/>
+        <img src="flags/1x1/gh.svg" alt="Ghana"/>
+        <img src="flags/1x1/gi.svg" alt="Gibraltar"/>
+        <img src="flags/1x1/gl.svg" alt="Greenland"/>
+        <img src="flags/1x1/gm.svg" alt="Gambia"/>
+        <img src="flags/1x1/gn.svg" alt="Guinea"/>
+        <img src="flags/1x1/gp.svg" alt="Guadeloupe"/>
+        <img src="flags/1x1/gq.svg" alt="Equatorial Guinea"/>
+        <img src="flags/1x1/gr.svg" alt="Greece"/>
+        <img src="flags/1x1/gs.svg" alt="South Georgia and the South Sandwich Islands"/>
+        <img src="flags/1x1/gt.svg" alt="Guatemala"/>
+        <img src="flags/1x1/gu.svg" alt="Guam"/>
+        <img src="flags/1x1/gw.svg" alt="Guinea-Bissau"/>
+        <img src="flags/1x1/gy.svg" alt="Guyana"/>
+        <img src="flags/1x1/hk.svg" alt="Hong Kong"/>
+        <img src="flags/1x1/hm.svg" alt="Heard Island and McDonald Islands"/>
+        <img src="flags/1x1/hn.svg" alt="Honduras"/>
+        <img src="flags/1x1/hr.svg" alt="Croatia"/>
+        <img src="flags/1x1/ht.svg" alt="Haiti"/>
+        <img src="flags/1x1/hu.svg" alt="Hungary"/>
+        <img src="flags/1x1/ic.svg" alt="Canary Islands"/>
+        <img src="flags/1x1/id.svg" alt="Indonesia"/>
+        <img src="flags/1x1/ie.svg" alt="Ireland"/>
+        <img src="flags/1x1/il.svg" alt="Israel"/>
+        <img src="flags/1x1/im.svg" alt="Isle of Man"/>
+        <img src="flags/1x1/in.svg" alt="India"/>
+        <img src="flags/1x1/io.svg" alt="British Indian Ocean Territory"/>
+        <img src="flags/1x1/iq.svg" alt="Iraq"/>
+        <img src="flags/1x1/ir.svg" alt="Iran"/>
+        <img src="flags/1x1/is.svg" alt="Iceland"/>
+        <img src="flags/1x1/it.svg" alt="Italy"/>
+        <img src="flags/1x1/je.svg" alt="Jersey"/>
+        <img src="flags/1x1/jm.svg" alt="Jamaica"/>
+        <img src="flags/1x1/jo.svg" alt="Jordan"/>
+        <img src="flags/1x1/jp.svg" alt="Japan"/>
+        <img src="flags/1x1/ke.svg" alt="Kenya"/>
+        <img src="flags/1x1/kg.svg" alt="Kyrgyzstan"/>
+        <img src="flags/1x1/kh.svg" alt="Cambodia"/>
+        <img src="flags/1x1/ki.svg" alt="Kiribati"/>
+        <img src="flags/1x1/km.svg" alt="Comoros"/>
+        <img src="flags/1x1/kn.svg" alt="Saint Kitts and Nevis"/>
+        <img src="flags/1x1/kp.svg" alt="North Korea"/>
+        <img src="flags/1x1/kr.svg" alt="South Korea"/>
+        <img src="flags/1x1/kw.svg" alt="Kuwait"/>
+        <img src="flags/1x1/ky.svg" alt="Cayman Islands"/>
+        <img src="flags/1x1/kz.svg" alt="Kazakhstan"/>
+        <img src="flags/1x1/la.svg" alt="Laos"/>
+        <img src="flags/1x1/lb.svg" alt="Lebanon"/>
+        <img src="flags/1x1/lc.svg" alt="Saint Lucia"/>
+        <img src="flags/1x1/li.svg" alt="Liechtenstein"/>
+        <img src="flags/1x1/lk.svg" alt="Sri Lanka"/>
+        <img src="flags/1x1/lr.svg" alt="Liberia"/>
+        <img src="flags/1x1/ls.svg" alt="Lesotho"/>
+        <img src="flags/1x1/lt.svg" alt="Lithuania"/>
+        <img src="flags/1x1/lu.svg" alt="Luxembourg"/>
+        <img src="flags/1x1/lv.svg" alt="Latvia"/>
+        <img src="flags/1x1/ly.svg" alt="Libya"/>
+        <img src="flags/1x1/ma.svg" alt="Morocco"/>
+        <img src="flags/1x1/mc.svg" alt="Monaco"/>
+        <img src="flags/1x1/md.svg" alt="Moldova"/>
+        <img src="flags/1x1/me.svg" alt="Montenegro"/>
+        <img src="flags/1x1/mf.svg" alt="Saint Martin"/>
+        <img src="flags/1x1/mg.svg" alt="Madagascar"/>
+        <img src="flags/1x1/mh.svg" alt="Marshall Islands"/>
+        <img src="flags/1x1/mk.svg" alt="North Macedonia"/>
+        <img src="flags/1x1/ml.svg" alt="Mali"/>
+        <img src="flags/1x1/mm.svg" alt="Myanmar"/>
+        <img src="flags/1x1/mn.svg" alt="Mongolia"/>
+        <img src="flags/1x1/mo.svg" alt="Macau"/>
+        <img src="flags/1x1/mp.svg" alt="Northern Mariana Islands"/>
+        <img src="flags/1x1/mq.svg" alt="Martinique"/>
+        <img src="flags/1x1/mr.svg" alt="Mauritania"/>
+        <img src="flags/1x1/ms.svg" alt="Montserrat"/>
+        <img src="flags/1x1/mt.svg" alt="Malta"/>
+        <img src="flags/1x1/mu.svg" alt="Mauritius"/>
+        <img src="flags/1x1/mv.svg" alt="Maldives"/>
+        <img src="flags/1x1/mw.svg" alt="Malawi"/>
+        <img src="flags/1x1/mx.svg" alt="Mexico"/>
+        <img src="flags/1x1/my.svg" alt="Malaysia"/>
+        <img src="flags/1x1/mz.svg" alt="Mozambique"/>
+        <img src="flags/1x1/na.svg" alt="Namibia"/>
+        <img src="flags/1x1/nc.svg" alt="New Caledonia"/>
+        <img src="flags/1x1/ne.svg" alt="Niger"/>
+        <img src="flags/1x1/nf.svg" alt="Norfolk Island"/>
+        <img src="flags/1x1/ng.svg" alt="Nigeria"/>
+        <img src="flags/1x1/ni.svg" alt="Nicaragua"/>
+        <img src="flags/1x1/nl.svg" alt="Netherlands"/>
+        <img src="flags/1x1/no.svg" alt="Norway"/>
+        <img src="flags/1x1/np.svg" alt="Nepal"/>
+        <img src="flags/1x1/nr.svg" alt="Nauru"/>
+        <img src="flags/1x1/nu.svg" alt="Niue"/>
+        <img src="flags/1x1/nz.svg" alt="New Zealand"/>
+        <img src="flags/1x1/om.svg" alt="Oman"/>
+        <img src="flags/1x1/pa.svg" alt="Panama"/>
+        <img src="flags/1x1/pc.svg" alt="Pacific Islands Trust Territory"/>
+        <img src="flags/1x1/pe.svg" alt="Peru"/>
+        <img src="flags/1x1/pf.svg" alt="French Polynesia"/>
+        <img src="flags/1x1/pg.svg" alt="Papua New Guinea"/>
+        <img src="flags/1x1/ph.svg" alt="Philippines"/>
+        <img src="flags/1x1/pk.svg" alt="Pakistan"/>
+        <img src="flags/1x1/pl.svg" alt="Poland"/>
+        <img src="flags/1x1/pm.svg" alt="Saint Pierre and Miquelon"/>
+        <img src="flags/1x1/pn.svg" alt="Pitcairn Islands"/>
+        <img src="flags/1x1/pr.svg" alt="Puerto Rico"/>
+        <img src="flags/1x1/ps.svg" alt="Palestine"/>
+        <img src="flags/1x1/pt.svg" alt="Portugal"/>
+        <img src="flags/1x1/pw.svg" alt="Palau"/>
+        <img src="flags/1x1/py.svg" alt="Paraguay"/>
+        <img src="flags/1x1/qa.svg" alt="Qatar"/>
+        <img src="flags/1x1/re.svg" alt="Réunion"/>
+        <img src="flags/1x1/ro.svg" alt="Romania"/>
+        <img src="flags/1x1/rs.svg" alt="Serbia"/>
+        <img src="flags/1x1/ru.svg" alt="Russia"/>
+        <img src="flags/1x1/rw.svg" alt="Rwanda"/>
+        <img src="flags/1x1/sa.svg" alt="Saudi Arabia"/>
+        <img src="flags/1x1/sb.svg" alt="Solomon Islands"/>
+        <img src="flags/1x1/sc.svg" alt="Seychelles"/>
+        <img src="flags/1x1/sd.svg" alt="Sudan"/>
+        <img src="flags/1x1/se.svg" alt="Sweden"/>
+        <img src="flags/1x1/sg.svg" alt="Singapore"/>
+        <img src="flags/1x1/sh-ac.svg" alt="Ascension Island"/>
+        <img src="flags/1x1/sh-hl.svg" alt="Saint Helena"/>
+        <img src="flags/1x1/sh-ta.svg" alt="Tristan da Cunha"/>
+        <img src="flags/1x1/sh.svg" alt="Saint Helena, Ascension and Tristan da Cunha"/>
+        <img src="flags/1x1/si.svg" alt="Slovenia"/>
+        <img src="flags/1x1/sj.svg" alt="Svalbard and Jan Mayen"/>
+        <img src="flags/1x1/sk.svg" alt="Slovakia"/>
+        <img src="flags/1x1/sl.svg" alt="Sierra Leone"/>
+        <img src="flags/1x1/sm.svg" alt="San Marino"/>
+        <img src="flags/1x1/sn.svg" alt="Senegal"/>
+        <img src="flags/1x1/so.svg" alt="Somalia"/>
+        <img src="flags/1x1/sr.svg" alt="Suriname"/>
+        <img src="flags/1x1/ss.svg" alt="South Sudan"/>
+        <img src="flags/1x1/st.svg" alt="São Tomé and Príncipe"/>
+        <img src="flags/1x1/sv.svg" alt="El Salvador"/>
+        <img src="flags/1x1/sx.svg" alt="Sint Maarten"/>
+        <img src="flags/1x1/sy.svg" alt="Syria"/>
+        <img src="flags/1x1/sz.svg" alt="Eswatini"/>
+        <img src="flags/1x1/tc.svg" alt="Turks and Caicos Islands"/>
+        <img src="flags/1x1/td.svg" alt="Chad"/>
+        <img src="flags/1x1/tf.svg" alt="French Southern and Antarctic Lands"/>
+        <img src="flags/1x1/tg.svg" alt="Togo"/>
+        <img src="flags/1x1/th.svg" alt="Thailand"/>
+        <img src="flags/1x1/tj.svg" alt="Tajikistan"/>
+        <img src="flags/1x1/tk.svg" alt="Tokelau"/>
+        <img src="flags/1x1/tl.svg" alt="Timor-Leste"/>
+        <img src="flags/1x1/tm.svg" alt="Turkmenistan"/>
+        <img src="flags/1x1/tn.svg" alt="Tunisia"/>
+        <img src="flags/1x1/to.svg" alt="Tonga"/>
+        <img src="flags/1x1/tr.svg" alt="Turkey"/>
+        <img src="flags/1x1/tt.svg" alt="Trinidad and Tobago"/>
+        <img src="flags/1x1/tv.svg" alt="Tuvalu"/>
+        <img src="flags/1x1/tw.svg" alt="Taiwan"/>
+        <img src="flags/1x1/tz.svg" alt="Tanzania"/>
+        <img src="flags/1x1/ua.svg" alt="Ukraine"/>
+        <img src="flags/1x1/ug.svg" alt="Uganda"/>
+        <img src="flags/1x1/um.svg" alt="United States Minor Outlying Islands"/>
+        <img src="flags/1x1/un.svg" alt="United Nations"/>
+        <img src="flags/1x1/us.svg" alt="United States"/>
+        <img src="flags/1x1/uy.svg" alt="Uruguay"/>
+        <img src="flags/1x1/uz.svg" alt="Uzbekistan"/>
+        <img src="flags/1x1/va.svg" alt="Vatican City"/>
+        <img src="flags/1x1/vc.svg" alt="Saint Vincent and the Grenadines"/>
+        <img src="flags/1x1/ve.svg" alt="Venezuela"/>
+        <img src="flags/1x1/vg.svg" alt="British Virgin Islands"/>
+        <img src="flags/1x1/vi.svg" alt="United States Virgin Islands"/>
+        <img src="flags/1x1/vn.svg" alt="Vietnam"/>
+        <img src="flags/1x1/vu.svg" alt="Vanuatu"/>
+        <img src="flags/1x1/wf.svg" alt="Wallis and Futuna"/>
+        <img src="flags/1x1/ws.svg" alt="Samoa"/>
+        <img src="flags/1x1/xk.svg" alt="Kosovo"/>
+        <img src="flags/1x1/xx.svg" alt="Unknown or Invalid Region"/>
+        <img src="flags/1x1/ye.svg" alt="Yemen"/>
+        <img src="flags/1x1/yt.svg" alt="Mayotte"/>
+        <img src="flags/1x1/za.svg" alt="South Africa"/>
+        <img src="flags/1x1/zm.svg" alt="Zambia"/>
+        <img src="flags/1x1/zw.svg" alt="Zimbabwe"/>
+
+    </div>
 </div>
+
+<button type="button" class="collapsible">4x3 Flags</button>
+<div class="content">
+    <div class="grid-container">
+        <!-- Repeat for each 4x3 flag -->
+        <img src="flags/4x3/ad.svg" alt="Andorra"/>
+        <img src="flags/4x3/ae.svg" alt="United Arab Emirates"/>
+        <img src="flags/4x3/af.svg" alt="Afghanistan"/>
+        <img src="flags/4x3/ag.svg" alt="Antigua and Barbuda"/>
+        <img src="flags/4x3/ai.svg" alt="Anguilla"/>
+        <img src="flags/4x3/al.svg" alt="Albania"/>
+        <img src="flags/4x3/am.svg" alt="Armenia"/>
+        <img src="flags/4x3/ao.svg" alt="Angola"/>
+        <img src="flags/4x3/aq.svg" alt="Antarctica"/>
+        <img src="flags/4x3/ar.svg" alt="Argentina"/>
+        <img src="flags/4x3/arab.svg" alt="Arab World"/>
+        <img src="flags/4x3/as.svg" alt="American Samoa"/>
+        <img src="flags/4x3/at.svg" alt="Austria"/>
+        <img src="flags/4x3/au.svg" alt="Australia"/>
+        <img src="flags/4x3/aw.svg" alt="Aruba"/>
+        <img src="flags/4x3/ax.svg" alt="Åland Islands"/>
+        <img src="flags/4x3/az.svg" alt="Azerbaijan"/>
+        <img src="flags/4x3/ba.svg" alt="Bosnia and Herzegovina"/>
+        <img src="flags/4x3/bb.svg" alt="Barbados"/>
+        <img src="flags/4x3/bd.svg" alt="Bangladesh"/>
+        <img src="flags/4x3/be.svg" alt="Belgium"/>
+        <img src="flags/4x3/bf.svg" alt="Burkina Faso"/>
+        <img src="flags/4x3/bg.svg" alt="Bulgaria"/>
+        <img src="flags/4x3/bh.svg" alt="Bahrain"/>
+        <img src="flags/4x3/bi.svg" alt="Burundi"/>
+        <img src="flags/4x3/bj.svg" alt="Benin"/>
+        <img src="flags/4x3/bl.svg" alt="Saint Barthélemy"/>
+        <img src="flags/4x3/bm.svg" alt="Bermuda"/>
+        <img src="flags/4x3/bn.svg" alt="Brunei"/>
+        <img src="flags/4x3/bo.svg" alt="Bolivia"/>
+        <img src="flags/4x3/bq.svg" alt="Caribbean Netherlands"/>
+        <img src="flags/4x3/br.svg" alt="Brazil"/>
+        <img src="flags/4x3/bs.svg" alt="The Bahamas"/>
+        <img src="flags/4x3/bt.svg" alt="Bhutan"/>
+        <img src="flags/4x3/bv.svg" alt="Bouvet Island"/>
+        <img src="flags/4x3/bw.svg" alt="Botswana"/>
+        <img src="flags/4x3/by.svg" alt="Belarus"/>
+        <img src="flags/4x3/bz.svg" alt="Belize"/>
+        <img src="flags/4x3/ca.svg" alt="Canada"/>
+        <img src="flags/4x3/cc.svg" alt="Cocos (Keeling) Islands"/>
+        <img src="flags/4x3/cd.svg" alt="Democratic Republic of the Congo"/>
+        <img src="flags/4x3/cefta.svg" alt="Central European Free Trade Agreement"/>
+        <img src="flags/4x3/cf.svg" alt="Central African Republic"/>
+        <img src="flags/4x3/cg.svg" alt="Republic of the Congo"/>
+        <img src="flags/4x3/ch.svg" alt="Switzerland"/>
+        <img src="flags/4x3/ci.svg" alt="Ivory Coast"/>
+        <img src="flags/4x3/ck.svg" alt="Cook Islands"/>
+        <img src="flags/4x3/cl.svg" alt="Chile"/>
+        <img src="flags/4x3/cm.svg" alt="Cameroon"/>
+        <img src="flags/4x3/cn.svg" alt="China"/>
+        <img src="flags/4x3/co.svg" alt="Colombia"/>
+        <img src="flags/4x3/cp.svg" alt="Clipperton Island"/>
+        <img src="flags/4x3/cr.svg" alt="Costa Rica"/>
+        <img src="flags/4x3/cu.svg" alt="Cuba"/>
+        <img src="flags/4x3/cv.svg" alt="Cape Verde"/>
+        <img src="flags/4x3/cw.svg" alt="Curaçao"/>
+        <img src="flags/4x3/cx.svg" alt="Christmas Island"/>
+        <img src="flags/4x3/cy.svg" alt="Cyprus"/>
+        <img src="flags/4x3/cz.svg" alt="Czech Republic"/>
+        <img src="flags/4x3/de.svg" alt="Germany"/>
+        <img src="flags/4x3/dg.svg" alt="Diego Garcia"/>
+        <img src="flags/4x3/dj.svg" alt="Djibouti"/>
+        <img src="flags/4x3/dk.svg" alt="Denmark"/>
+        <img src="flags/4x3/dm.svg" alt="Dominica"/>
+        <img src="flags/4x3/do.svg" alt="Dominican Republic"/>
+        <img src="flags/4x3/dz.svg" alt="Algeria"/>
+        <img src="flags/4x3/eac.svg" alt="East African Community"/>
+        <img src="flags/4x3/ec.svg" alt="Ecuador"/>
+        <img src="flags/4x3/ee.svg" alt="Estonia"/>
+        <img src="flags/4x3/eg.svg" alt="Egypt"/>
+        <img src="flags/4x3/eh.svg" alt="Western Sahara"/>
+        <img src="flags/4x3/er.svg" alt="Eritrea"/>
+        <img src="flags/4x3/es-ct.svg" alt="Catalonia"/>
+        <img src="flags/4x3/es-ga.svg" alt="Galicia"/>
+        <img src="flags/4x3/es-pv.svg" alt="Basque Country"/>
+        <img src="flags/4x3/es.svg" alt="Spain"/>
+        <img src="flags/4x3/et.svg" alt="Ethiopia"/>
+        <img src="flags/4x3/eu.svg" alt="European Union"/>
+        <img src="flags/4x3/fi.svg" alt="Finland"/>
+        <img src="flags/4x3/fj.svg" alt="Fiji"/>
+        <img src="flags/4x3/fk.svg" alt="Falkland Islands"/>
+        <img src="flags/4x3/fm.svg" alt="Micronesia"/>
+        <img src="flags/4x3/fo.svg" alt="Faroe Islands"/>
+        <img src="flags/4x3/fr.svg" alt="France"/>
+        <img src="flags/4x3/ga.svg" alt="Gabon"/>
+        <img src="flags/4x3/gb-eng.svg" alt="England"/>
+        <img src="flags/4x3/gb-nir.svg" alt="Northern Ireland"/>
+        <img src="flags/4x3/gb-sct.svg" alt="Scotland"/>
+        <img src="flags/4x3/gb-wls.svg" alt="Wales"/>
+        <img src="flags/4x3/gb.svg" alt="United Kingdom"/>
+        <img src="flags/4x3/gd.svg" alt="Grenada"/>
+        <img src="flags/4x3/ge.svg" alt="Georgia"/>
+        <img src="flags/4x3/gf.svg" alt="French Guiana"/>
+        <img src="flags/4x3/gg.svg" alt="Guernsey"/>
+        <img src="flags/4x3/gh.svg" alt="Ghana"/>
+        <img src="flags/4x3/gi.svg" alt="Gibraltar"/>
+        <img src="flags/4x3/gl.svg" alt="Greenland"/>
+        <img src="flags/4x3/gm.svg" alt="Gambia"/>
+        <img src="flags/4x3/gn.svg" alt="Guinea"/>
+        <img src="flags/4x3/gp.svg" alt="Guadeloupe"/>
+        <img src="flags/4x3/gq.svg" alt="Equatorial Guinea"/>
+        <img src="flags/4x3/gr.svg" alt="Greece"/>
+        <img src="flags/4x3/gs.svg" alt="South Georgia and the South Sandwich Islands"/>
+        <img src="flags/4x3/gt.svg" alt="Guatemala"/>
+        <img src="flags/4x3/gu.svg" alt="Guam"/>
+        <img src="flags/4x3/gw.svg" alt="Guinea-Bissau"/>
+        <img src="flags/4x3/gy.svg" alt="Guyana"/>
+        <img src="flags/4x3/hk.svg" alt="Hong Kong"/>
+        <img src="flags/4x3/hm.svg" alt="Heard Island and McDonald Islands"/>
+        <img src="flags/4x3/hn.svg" alt="Honduras"/>
+        <img src="flags/4x3/hr.svg" alt="Croatia"/>
+        <img src="flags/4x3/ht.svg" alt="Haiti"/>
+        <img src="flags/4x3/hu.svg" alt="Hungary"/>
+        <img src="flags/4x3/ic.svg" alt="Canary Islands"/>
+        <img src="flags/4x3/id.svg" alt="Indonesia"/>
+        <img src="flags/4x3/ie.svg" alt="Ireland"/>
+        <img src="flags/4x3/il.svg" alt="Israel"/>
+        <img src="flags/4x3/im.svg" alt="Isle of Man"/>
+        <img src="flags/4x3/in.svg" alt="India"/>
+        <img src="flags/4x3/io.svg" alt="British Indian Ocean Territory"/>
+        <img src="flags/4x3/iq.svg" alt="Iraq"/>
+        <img src="flags/4x3/ir.svg" alt="Iran"/>
+        <img src="flags/4x3/is.svg" alt="Iceland"/>
+        <img src="flags/4x3/it.svg" alt="Italy"/>
+        <img src="flags/4x3/je.svg" alt="Jersey"/>
+        <img src="flags/4x3/jm.svg" alt="Jamaica"/>
+        <img src="flags/4x3/jo.svg" alt="Jordan"/>
+        <img src="flags/4x3/jp.svg" alt="Japan"/>
+        <img src="flags/4x3/ke.svg" alt="Kenya"/>
+        <img src="flags/4x3/kg.svg" alt="Kyrgyzstan"/>
+        <img src="flags/4x3/kh.svg" alt="Cambodia"/>
+        <img src="flags/4x3/ki.svg" alt="Kiribati"/>
+        <img src="flags/4x3/km.svg" alt="Comoros"/>
+        <img src="flags/4x3/kn.svg" alt="Saint Kitts and Nevis"/>
+        <img src="flags/4x3/kp.svg" alt="North Korea"/>
+        <img src="flags/4x3/kr.svg" alt="South Korea"/>
+        <img src="flags/4x3/kw.svg" alt="Kuwait"/>
+        <img src="flags/4x3/ky.svg" alt="Cayman Islands"/>
+        <img src="flags/4x3/kz.svg" alt="Kazakhstan"/>
+        <img src="flags/4x3/la.svg" alt="Laos"/>
+        <img src="flags/4x3/lb.svg" alt="Lebanon"/>
+        <img src="flags/4x3/lc.svg" alt="Saint Lucia"/>
+        <img src="flags/4x3/li.svg" alt="Liechtenstein"/>
+        <img src="flags/4x3/lk.svg" alt="Sri Lanka"/>
+        <img src="flags/4x3/lr.svg" alt="Liberia"/>
+        <img src="flags/4x3/ls.svg" alt="Lesotho"/>
+        <img src="flags/4x3/lt.svg" alt="Lithuania"/>
+        <img src="flags/4x3/lu.svg" alt="Luxembourg"/>
+        <img src="flags/4x3/lv.svg" alt="Latvia"/>
+        <img src="flags/4x3/ly.svg" alt="Libya"/>
+        <img src="flags/4x3/ma.svg" alt="Morocco"/>
+        <img src="flags/4x3/mc.svg" alt="Monaco"/>
+        <img src="flags/4x3/md.svg" alt="Moldova"/>
+        <img src="flags/4x3/me.svg" alt="Montenegro"/>
+        <img src="flags/4x3/mf.svg" alt="Saint Martin"/>
+        <img src="flags/4x3/mg.svg" alt="Madagascar"/>
+        <img src="flags/4x3/mh.svg" alt="Marshall Islands"/>
+        <img src="flags/4x3/mk.svg" alt="North Macedonia"/>
+        <img src="flags/4x3/ml.svg" alt="Mali"/>
+        <img src="flags/4x3/mm.svg" alt="Myanmar"/>
+        <img src="flags/4x3/mn.svg" alt="Mongolia"/>
+        <img src="flags/4x3/mo.svg" alt="Macau"/>
+        <img src="flags/4x3/mp.svg" alt="Northern Mariana Islands"/>
+        <img src="flags/4x3/mq.svg" alt="Martinique"/>
+        <img src="flags/4x3/mr.svg" alt="Mauritania"/>
+        <img src="flags/4x3/ms.svg" alt="Montserrat"/>
+        <img src="flags/4x3/mt.svg" alt="Malta"/>
+        <img src="flags/4x3/mu.svg" alt="Mauritius"/>
+        <img src="flags/4x3/mv.svg" alt="Maldives"/>
+        <img src="flags/4x3/mw.svg" alt="Malawi"/>
+        <img src="flags/4x3/mx.svg" alt="Mexico"/>
+        <img src="flags/4x3/my.svg" alt="Malaysia"/>
+        <img src="flags/4x3/mz.svg" alt="Mozambique"/>
+        <img src="flags/4x3/na.svg" alt="Namibia"/>
+        <img src="flags/4x3/nc.svg" alt="New Caledonia"/>
+        <img src="flags/4x3/ne.svg" alt="Niger"/>
+        <img src="flags/4x3/nf.svg" alt="Norfolk Island"/>
+        <img src="flags/4x3/ng.svg" alt="Nigeria"/>
+        <img src="flags/4x3/ni.svg" alt="Nicaragua"/>
+        <img src="flags/4x3/nl.svg" alt="Netherlands"/>
+        <img src="flags/4x3/no.svg" alt="Norway"/>
+        <img src="flags/4x3/np.svg" alt="Nepal"/>
+        <img src="flags/4x3/nr.svg" alt="Nauru"/>
+        <img src="flags/4x3/nu.svg" alt="Niue"/>
+        <img src="flags/4x3/nz.svg" alt="New Zealand"/>
+        <img src="flags/4x3/om.svg" alt="Oman"/>
+        <img src="flags/4x3/pa.svg" alt="Panama"/>
+        <img src="flags/4x3/pc.svg" alt="Pacific Islands Trust Territory"/>
+        <img src="flags/4x3/pe.svg" alt="Peru"/>
+        <img src="flags/4x3/pf.svg" alt="French Polynesia"/>
+        <img src="flags/4x3/pg.svg" alt="Papua New Guinea"/>
+        <img src="flags/4x3/ph.svg" alt="Philippines"/>
+        <img src="flags/4x3/pk.svg" alt="Pakistan"/>
+        <img src="flags/4x3/pl.svg" alt="Poland"/>
+        <img src="flags/4x3/pm.svg" alt="Saint Pierre and Miquelon"/>
+        <img src="flags/4x3/pn.svg" alt="Pitcairn Islands"/>
+        <img src="flags/4x3/pr.svg" alt="Puerto Rico"/>
+        <img src="flags/4x3/ps.svg" alt="Palestine"/>
+        <img src="flags/4x3/pt.svg" alt="Portugal"/>
+        <img src="flags/4x3/pw.svg" alt="Palau"/>
+        <img src="flags/4x3/py.svg" alt="Paraguay"/>
+        <img src="flags/4x3/qa.svg" alt="Qatar"/>
+        <img src="flags/4x3/re.svg" alt="Réunion"/>
+        <img src="flags/4x3/ro.svg" alt="Romania"/>
+        <img src="flags/4x3/rs.svg" alt="Serbia"/>
+        <img src="flags/4x3/ru.svg" alt="Russia"/>
+        <img src="flags/4x3/rw.svg" alt="Rwanda"/>
+        <img src="flags/4x3/sa.svg" alt="Saudi Arabia"/>
+        <img src="flags/4x3/sb.svg" alt="Solomon Islands"/>
+        <img src="flags/4x3/sc.svg" alt="Seychelles"/>
+        <img src="flags/4x3/sd.svg" alt="Sudan"/>
+        <img src="flags/4x3/se.svg" alt="Sweden"/>
+        <img src="flags/4x3/sg.svg" alt="Singapore"/>
+        <img src="flags/4x3/sh-ac.svg" alt="Ascension Island"/>
+        <img src="flags/4x3/sh-hl.svg" alt="Saint Helena"/>
+        <img src="flags/4x3/sh-ta.svg" alt="Tristan da Cunha"/>
+        <img src="flags/4x3/sh.svg" alt="Saint Helena, Ascension and Tristan da Cunha"/>
+        <img src="flags/4x3/si.svg" alt="Slovenia"/>
+        <img src="flags/4x3/sj.svg" alt="Svalbard and Jan Mayen"/>
+        <img src="flags/4x3/sk.svg" alt="Slovakia"/>
+        <img src="flags/4x3/sl.svg" alt="Sierra Leone"/>
+        <img src="flags/4x3/sm.svg" alt="San Marino"/>
+        <img src="flags/4x3/sn.svg" alt="Senegal"/>
+        <img src="flags/4x3/so.svg" alt="Somalia"/>
+        <img src="flags/4x3/sr.svg" alt="Suriname"/>
+        <img src="flags/4x3/ss.svg" alt="South Sudan"/>
+        <img src="flags/4x3/st.svg" alt="São Tomé and Príncipe"/>
+        <img src="flags/4x3/sv.svg" alt="El Salvador"/>
+        <img src="flags/4x3/sx.svg" alt="Sint Maarten"/>
+        <img src="flags/4x3/sy.svg" alt="Syria"/>
+        <img src="flags/4x3/sz.svg" alt="Eswatini"/>
+        <img src="flags/4x3/tc.svg" alt="Turks and Caicos Islands"/>
+        <img src="flags/4x3/td.svg" alt="Chad"/>
+        <img src="flags/4x3/tf.svg" alt="French Southern and Antarctic Lands"/>
+        <img src="flags/4x3/tg.svg" alt="Togo"/>
+        <img src="flags/4x3/th.svg" alt="Thailand"/>
+        <img src="flags/4x3/tj.svg" alt="Tajikistan"/>
+        <img src="flags/4x3/tk.svg" alt="Tokelau"/>
+        <img src="flags/4x3/tl.svg" alt="Timor-Leste"/>
+        <img src="flags/4x3/tm.svg" alt="Turkmenistan"/>
+        <img src="flags/4x3/tn.svg" alt="Tunisia"/>
+        <img src="flags/4x3/to.svg" alt="Tonga"/>
+        <img src="flags/4x3/tr.svg" alt="Turkey"/>
+        <img src="flags/4x3/tt.svg" alt="Trinidad and Tobago"/>
+        <img src="flags/4x3/tv.svg" alt="Tuvalu"/>
+        <img src="flags/4x3/tw.svg" alt="Taiwan"/>
+        <img src="flags/4x3/tz.svg" alt="Tanzania"/>
+        <img src="flags/4x3/ua.svg" alt="Ukraine"/>
+        <img src="flags/4x3/ug.svg" alt="Uganda"/>
+        <img src="flags/4x3/um.svg" alt="United States Minor Outlying Islands"/>
+        <img src="flags/4x3/un.svg" alt="United Nations"/>
+        <img src="flags/4x3/us.svg" alt="United States"/>
+        <img src="flags/4x3/uy.svg" alt="Uruguay"/>
+        <img src="flags/4x3/uz.svg" alt="Uzbekistan"/>
+        <img src="flags/4x3/va.svg" alt="Vatican City"/>
+        <img src="flags/4x3/vc.svg" alt="Saint Vincent and the Grenadines"/>
+        <img src="flags/4x3/ve.svg" alt="Venezuela"/>
+        <img src="flags/4x3/vg.svg" alt="British Virgin Islands"/>
+        <img src="flags/4x3/vi.svg" alt="United States Virgin Islands"/>
+        <img src="flags/4x3/vn.svg" alt="Vietnam"/>
+        <img src="flags/4x3/vu.svg" alt="Vanuatu"/>
+        <img src="flags/4x3/wf.svg" alt="Wallis and Futuna"/>
+        <img src="flags/4x3/ws.svg" alt="Samoa"/>
+        <img src="flags/4x3/xk.svg" alt="Kosovo"/>
+        <img src="flags/4x3/xx.svg" alt="Unknown or Invalid Region"/>
+        <img src="flags/4x3/ye.svg" alt="Yemen"/>
+        <img src="flags/4x3/yt.svg" alt="Mayotte"/>
+        <img src="flags/4x3/za.svg" alt="South Africa"/>
+        <img src="flags/4x3/zm.svg" alt="Zambia"/>
+        <img src="flags/4x3/zw.svg" alt="Zimbabwe"/>
+    </div>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
